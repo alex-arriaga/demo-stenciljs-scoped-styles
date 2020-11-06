@@ -1,0 +1,53 @@
+/*
+  Global App CSS
+  ----------------------
+  Use this file for styles that should be applied to all components.
+  For example, "font-family" within the "body" selector is a CSS property
+  most apps will want applied to all components.
+
+  Any global CSS variables should also be applied here.
+*/
+
+@import "variables";
+
+body {
+  background-color: #efefef;
+}
+
+.b-nav-link {
+  color: white;
+  padding: 0 15px;
+  font-weight: bold;
+
+  &:hover {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.b-section {
+
+  &--dark {
+    background: $blue;
+    color: white;
+  }
+
+  &--highlighted {
+    background: darken($blue, 30%);
+    color: white;
+  }
+}
+
+.b-footer {
+  background: black;
+  min-height: 80px;
+  color: white;
+
+  a {
+    color: white;
+  }
+}
+
+.demo-event-item {
+  background-color: white;
+}

@@ -1,0 +1,66 @@
+@import "src/global/variables";
+
+@mixin create-demo-event-item {
+  .demo-event-item {
+    margin: 20px 0;
+    border-radius: 5px;
+    text-align: left;
+    -webkit-box-shadow: 0 15px 35px rgba(50, 50, 93, .03), 0 5px 15px rgba(0, 0, 0, .06);
+    box-shadow: 0 15px 35px rgba(50, 50, 93, .03), 0 5px 15px rgba(0, 0, 0, .06);
+
+    &__title {
+      font-size: 1.5em;
+      margin: 5px 0;
+    }
+
+    &__place {
+      color: lighten($dark-gray, 15%);
+      letter-spacing: 1px;
+      font-size: 0.7em;
+    }
+
+    &__summary {
+      font-size: 0.9em;
+      margin-top: 10px;
+      color: lighten($dark-gray, 5%);
+    }
+
+    &__body {
+      padding: 20px;
+    }
+
+    &__speaker {
+      color: lighten($dark-gray, 5%);
+    }
+
+    &__image {
+      cursor: pointer;
+      width: 100%;
+    }
+
+    a {
+      color: black;
+    }
+
+  }
+}
+
+@mixin create-demo-event-item-header {
+  .demo-event-item-header {
+    &__date {
+      background: $blue;
+      color: white;
+      text-align: center;
+      width: 100%;
+      padding: 10px 0;
+      border-top: 10px solid darken($blue, 10%);
+    }
+
+    &__time {
+      display: block;
+      font-size: 1.5em;
+    }
+  }
+}
+
+
